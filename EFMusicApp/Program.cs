@@ -40,8 +40,9 @@ namespace EFMusicApp
                     else if (option == "Add New Album") AddItem.AddAlbum();
                     else if (option == "Add New Song") AddItem.AddSong();
 
-
-
+                    else if (option == "Remove Artist") RemoveItem.RemoveArtist();
+                    else if (option == "Remove Album") RemoveItem.RemoveAlbum();
+                    else if (option == "Remove Song") RemoveItem.RemoveSong();
                     else if (option == "Populate Database from file")
                     {
                         ReadFromFile.ReadAll();

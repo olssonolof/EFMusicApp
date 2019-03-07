@@ -66,14 +66,29 @@ namespace EFMusicApp
                 {
                     "Add Something",
                     "Show Something",
+                    "Remove Something",
                     "Populate Database from file",
                     "Quit"
                 });
             if (menu == "Add Something") return AddMenu();
             else if (menu == "Show Something") return ShowMenu();
             else if (menu == "Populate Database from file") return menu;
+            else if (menu == "Remove Something") return RemoveMenu();
 
             return menu;
+        }
+
+        private static string RemoveMenu()
+        {
+            string menu = DrawMenu("What do You wan't to remove? ", new[]
+            {
+                "Remove Artist",
+                "Remove Album",
+                "Remove Song",
+                "Back"
+            });
+            if (menu != "Back") return menu;
+            return MainMenu();
         }
 
         private static string ShowMenu()

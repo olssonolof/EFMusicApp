@@ -14,6 +14,7 @@ namespace EFMusicApp.Models
         public int TrackNumber { get; set; }
         public bool HasMusicVideo { get; set; }
         public string Lyrics { get; set; }
+        [Required]
         public Album Albums { get; set; }
 
     }

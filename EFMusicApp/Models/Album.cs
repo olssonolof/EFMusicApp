@@ -12,6 +12,7 @@ namespace EFMusicApp.Models
         public string Title { get; set; }
         public int ReleaseDate { get; set; }
         public List<Song> Songs { get; set; }
+        [Required]
         public Artist Artists { get; set; }
 
     }
